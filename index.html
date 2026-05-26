@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр Соколов - Фотограф</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="photo-wrapper">
+        <div class="photo-glitch" id="photoGlitch">
+          <div class="photo" id="heroPhoto"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1 id="typedName"></h1>
+        <p class="subtitle" id="typedSubtitle"></p>
+        <p class="hero-desc">Портретная &bull; Свадебная &bull; Репортажная съёмка<br>в естественном свете без лишней обработки</p>
+        <div class="cta">
+          <a href="#projects" class="btn outline">Смотреть работы</a>
+          <a href="#contact" class="btn">Связаться</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title reveal">Портфолио</h2>
+    <div class="about-content reveal">
+      <p>Каждый кадр - это история. Работаю с естественным светом, без лишней обработки. Минимализм, текстуры, искренние эмоции.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title reveal">Последние работы</h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80');background-size:cover;background-position:center"></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80');background-size:cover;background-position:center"></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1494475673543-6a6a27143fc8?w=600&q=80');background-size:cover;background-position:center"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title reveal">Контакты</h2>
+    <div class="contact-content reveal">
+      <p class="contact-item"><a href="tel:+79991234567"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +7 999 123-45-67</a></p>
+      <p class="contact-item"><a href="mailto:egor.riznykhh@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> egor.riznykhh@gmail.com</a></p>
+      <div class="contact-form">
+        <input type="text" id="msgName" placeholder="Ваше имя">
+        <input type="tel" id="msgPhone" placeholder="Номер телефона">
+        <textarea id="msgText" placeholder="Сообщение..." rows="3"></textarea>
+        <button class="btn" id="sendBtn">Отправить</button>
+        <small style="color:rgba(255,255,255,0.3);font-size:12px;margin-top:4px;">Нажимая, вы отправляете сообщение автору</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="notification" id="notification"></div>
+
+  <footer>
+    <p>&copy; 2026 Александр Соколов</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
